@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Praying</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Praying time</h1>
+        <div class="header__wrapper city">
+          <form class="city__form">
+            <select
+              class="city__select"
+              name="region_name"
+              aria-label="Choose Region"
+            >
+              <option value="" hidden="">Choose Region</option>
+              <option value="Toshkent">Tashkent</option>
+              <option value="Andijon">Andijan</option>
+              <option value="Farg'ona">Fargona</option>
+              <option value="Namangan">Namangan</option>
+              <option value="Guliston">Guliston</option>
+              <option value="Jizzax">Jizzakh</option>
+              <option value="Samarqand">Samarqand</option>
+              <option value="Qarshi">Qarshi</option>
+              <option value="Buxoro">Buxoro</option>
+              <option value="Navoiy">Navaiy</option>
+              <option value="Xiva">Khiva</option>
+              <option value="Nukus">Nukus</option>
+            </select>
+          </form>
+          <div class="date">
+            <button class="date__day">Daily</button>
+            <button class="date__week">Weekly</button>
+            <button class="date__month">Monthly</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="container">
+        <div class="content">
+          <div class="content__textbox">
+            <h2 class="content__title">Toshkent</h2>
+            <p class="content__date">Date:September 13th 2023</p>
+            <p class="content__time">15:27:40</p>
+          </div>
+          <div class="content__times time">
+            <ul class="time">
+              <li class="time__item">Fajr</li>
+              <li class="time__item">Sunrise</li>
+              <li class="time__item">Dhuhr</li>
+              <li class="time__item">Asr</li>
+              <li class="time__item">Maghrib</li>
+              <li class="time__item">Isha</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer"></footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
