@@ -3,11 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Time</title>
+    <title>prayer times</title>
   </head>
   <body>
-    <p>sssddd</p>
+    <header class="header">
+      <div class="container">
+        <div class="header__textbox">
+          <h1 class="header__title">prayer times</h1>
+          <form class="header__form select">
+            <select
+              name="region"
+              id="region"
+              class="select__region"
+              aria-label="choose region"
+            >
+              <option value="" hidden>region</option>
+              <option value="Toshkent">Toshkent</option>
+              <option value="Andijon">Andijon</option>
+              <option value="Farg'ona">Farg'ona</option>
+              <option value="Namangan">Namangan</option>
+              <option value="Guliston">Guliston</option>
+              <option value="Jizzax">Jizzax</option>
+              <option value="Samarqand">Samarqand</option>
+              <option value="Qarshi">Qarshi</option>
+              <option value="Buxoro">Buxoro</option>
+              <option value="Navoiy">Navoiy</option>
+              <option value="Xiva">Xiva</option>
+              <option value="Nukus">Nukus</option>
+            </select>
+          </form>
+        </div>
+        <div class="header__wrapper">
+          <form class="header__date">
+            <button type="button" class="header__daily">daily</button>
+            <button type="button" class="header__weekly">weekly</button>
+            <button type="button" class="header__monthly">monthly</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="content">
+          <div class="content__textbox">
+            <h2 class="content__title">Toshkent</h2>
+            <p class="content__time">6:57</p>
+            <p class="content__date">09/17/2023</p>
+          </div>
+        </div>
+        <div class="times">
+          <ul class="times__list">
+            <li class="times__item item">
+              <p class="item__name">Bomdod</p>
+              <p class="item__time">04.43</p>
+            </li>
+            <li class="times__item item">
+              <p class="item__name">Quyosh</p>
+              <p class="item__time">04.43</p>
+            </li>
+            <li class="times__item item">
+              <p class="item__name">Peshin</p>
+              <p class="item__time">04.43</p>
+            </li>
+            <li class="times__item item">
+              <p class="item__name">Asr</p>
+              <p class="item__time">04.43</p>
+            </li>
+            <li class="times__item item">
+              <p class="item__name">Shom</p>
+              <p class="item__time">04.43</p>
+            </li>
+            <li class="times__item item">
+              <p class="item__name">Xufton</p>
+              <p class="item__time">04.43</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
     <script src="js/script.js"></script>
   </body>
 </html>
