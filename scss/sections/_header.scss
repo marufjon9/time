@@ -38,10 +38,25 @@
 }
 .header__daily {
   @include border;
+  cursor: pointer;
+  transition: 0.4s ease;
+  &:hover {
+    transform: scaleY(1.15);
+  }
 }
 .header__weekly {
   @include border;
+  cursor: pointer;
+  transition: 0.4s ease;
+  &:hover {
+    transform: scaleY(1.15);
+  }
 }
 .header__monthly {
   @include border;
+  cursor: pointer;
+  transition: 0.4s ease;
+  &:hover {
+    transform: scaleY(1.15);
+  }
 }
